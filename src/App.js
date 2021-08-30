@@ -51,21 +51,14 @@ function App() {
   const classes = useStyles()
 
   const fetchData = async() => {
-    const toArray = [];
+    const array = [];
     await fetch(`https://pokeapi.co/api/v2/pokemon/${value}`).then(
       res => res.json())
       .then(result => {
-        toArray.push(result)
-        console.log(result)
-        setData(toArray)
-        console.log(`BUY ${result.data}`)
+        array.push(result)
+        setData(array)
       })
     }
-      console.log(data)
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, [])
 
   const handleChange = (e) => {
     setValue(e.target.value.toLowerCase())
