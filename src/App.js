@@ -79,7 +79,7 @@ function App() {
         </h2>
       </form>
       {data.map((d, i) => (
-      <Paper className={`${classes.row} ${classes.paper}`} variant="outlined">
+      <Paper key={i} className={`${classes.row} ${classes.paper}`} variant="outlined">
         <Box  className={`${classes.image}`}>
           <img  className={`${classes.imageItem}`} src={d.sprites["front_shiny"]}/>
         </Box>
