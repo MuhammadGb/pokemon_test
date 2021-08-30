@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function App() {
-  const [value, setValue] = useState("pikachu");
+  const [value, setValue] = useState("");
   const [data, setData] = useState([]);
   const classes = useStyles()
 
